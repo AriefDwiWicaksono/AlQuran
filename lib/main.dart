@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
-import 'pages/posts_page.dart';
+import 'posts.dart';
 
 void main() {
-  runApp(QuranApp());
+  runApp(MyApp());
 }
 
-class QuranApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'HTTP',
       debugShowCheckedModeBanner: false,
-      title: 'Al-Quran App',
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: PostsPage(),
     );
